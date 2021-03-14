@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%),
+    url('../image/Background.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+header 
+{
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+header img
+{
+    margin-left: 60px;
+}
+header button
+{
+    display: none;
+    border: none;
+    color: white;
+    background-color: black;
+}
+header button:hover
+{
+    cursor: pointer;
+}
+header button:focus
+{
+    outline: none;
+}
+
+header ul{
+    list-style-type: none;
+    margin-right: 60px;
+    overflow: hidden;
+    padding: 0;
+
+}
+header li {
+    float: left;
+    padding-bottom: 20px;
+}
+header a{
+
+
+    display: block;
+    color:black;
+    text-decoration: none;
+    margin-right:16px;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 12px 10px;
+    transition: 0.5s ease-in-out;
+}
+header a:hover
+{
+    background-color: black;
+    color: white;
+    box-shadow: 0 2px 4px black;
+}
+.banniere h1
+{
+    position: absolute;
+    left: 380px;
+    top: 160px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+}
+.banniere p
+{
+    position:absolute;
+    top: 250px;
+    font-size: 25px;
+    color: white;
+    left: 470px;
+    font-weight: bold;
+}
+.bouton
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 480px;
+    position:absolute;
+    top: 500px;
+}
+.bouton  a
+{
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5 ease-in-out;
+}
+.bouton .btn1
+{
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 40px;
+    font-weight: bold;
+}
+.bouton .btn2
+{
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    padding: 15px 20px;
+    margin: 40px;
+    font-weight: bold;
+}
+@media(max-width: 1432px)
+{
+   .bouton
+   {
+    margin: 0 465px;
+   }
+}
+@media(max-width: 1403px)
+{
+    .bouton
+    {
+        margin: 0 450px;
+    }
+    .banniere h1
+    {
+        left: 300px;
+    }
+}
+
+@media(max-width: 1372px)
+{
+    .bouton
+    {
+        margin:0 425px;
+    }
+}
+@media(max-width: 1323px)
+{
+    .bouton
+    {
+        margin: 0 360px;
+    }
+}
+@media(max-width:1193px)
+{
+    .bouton
+    {
+        margin:  0 325px;
+    }
+    .banniere h1
+    {
+        left: 250px;
+    }
+    .banniere p
+    {
+        left: 312px;
+    }
+}
+@media(max-width: 1123px)
+{
+    .bouton 
+    {
+        margin: 0 290px;
+    }
+    .banniere h1
+    {
+        left: 200px;
+    }
+}
+@media(max-width: 1052px)
+{
+    .bouton 
+    {
+        margin: 0 240px;
+    }
+    .banniere h1
+    {
+        left: 200px;
+    }
+}
+@media(max-width: 1010px)
+{
+    .banniere h1
+    {
+        left: 120px;
+    }
+}
+@media(max-width:952px)
+{
+    .bouton
+    {
+        margin:  0 200px;
+    }
+    .banniere p
+    {
+        left: 190px;
+    }
+}
+@media(max-width:872px)
+{
+    .bouton
+    {
+        margin: 0 180px;
+    }
+    .banniere h1
+    {
+        font-size: 28px;
+    }
+    .banniere p
+    {
+        font-size: 23px;
+    }
+}
+ @media(max-width: 832px)
+ {
+    .bouton
+    {
+        margin: 0 150px;
+    }
+ }
+ @media(max-width: 772px)
+ {
+    .bouton
+    {
+        margin: 0 130px;
+    }
+ }
+ @media(max-width: 732px)
+ {
+    .bouton
+    {
+        margin: 0 100px;
+    }
+ }
+  @media(max-width: 716px){
+    .bouton{
+        margin: 0 120px;
+    }
+ }
+ @media(max-width:712px ){
+    .bouton{
+        margin:  0 100px;
+    }
+    .banniere p{
+        left: 140px;
+    }
+    .banniere h1{
+        left: 90px;
+    }
+ }
+ @media(max-width: 702px){
+    header
+    {
+        background-color: black;
+    }
+    header img
+    {
+        margin-left: 0;
+    }
+    header button
+    {
+        display: block;
+        margin-right: 20px;
+    }
+    header li
+    {
+        float: none;
+        padding: 10px 0;
+    }
+    header ul
+    {
+        margin-left: 60px;
+    }
+    header a
+    {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 40px;
+        transition: 0.5s ease-in-out;
+        font-weight: bold;
+        text-align: center;
+    }
+    header a:hover
+    {
+        color: black;
+        background-color: white;
+        box-shadow: 0px 2px 4px 0px white;
+    }
+    .cache
+    {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: black;
+    }
+    
+    .banniere p{
+        top: 420px;
+        font-size:20px;
+    }
+    .banniere h1{
+        top: 380px;
+        font-size: 25px;
+    }
+    .bouton {
+        margin: 90px;
+
+    }
+ }
+ @media(max-width: 652px){
+    .bouton{
+        margin: 70px;
+    }
+ }
+ @media(max-width: 612px){
+    .bouton{
+        margin: 50px;    }
+ }
+ @media(max-width:573px){
+    .bouton{
+        margin: 25px;
+        }
+        .banniere h1{
+            font-size: 22px;
+            left: 50px;
+        }
+        .banniere p{
+            font-size: 18px;
+        }
+
+ }
+ @media(max-width:523px){
+
+
+    .bouton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 120px;
+        
+
+    }
+ }
+ @media(max-width: 469px){
+    .banniere h1{
+    font-size: 18px;
+    }
+    .banniere p{
+        font-size: 15px;
+
+    }
+    .bouton .btn1{
+    padding: 10px 12px;
+}
+.bouton .btn2{
+
+    padding: 12px 10px;
+    
+}
+ }
+ @media(max-width: 388px){
+    .banniere h1{
+        left: 32px;
+        font-size: 15px;
+    }
+    .banniere p{
+        font-size: 16px;
+        left: 28px;
+    }
+    .bouton{
+        left: 40px;
+    }
+ }

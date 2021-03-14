@@ -1,0 +1,322 @@
+:root{
+    --main-color:#fff;
+    --color-dark:#1D2231;
+    --color-black:#000;
+    --color-grey-light : #332c2c;
+    --color-blue: #0990D0;
+    --color-grey-1:#7A6767;
+    --color-grey-bg:#E9E7E7;
+    --color-green:#6AE95B;
+    --color-red:#FF002B;
+}
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+#sidebar-toggle{
+    display:none;
+}
+.sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 100;
+    background: var(--color-dark);
+    color: var(--main-color);
+    transition: width 500ms;
+}
+.logo img{
+   margin:2rem 3.5rem;
+   width: 8rem;
+}
+.sidebar-header i.icon1{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+.sidebar-menu{
+    padding: 1rem;
+}
+.sidebar-menu .side-title{
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+.sidebar li{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.sidebar a{
+    color:var(--color-main);
+}
+#sidebar-toggle:checked ~ .sidebar{
+    width: 80px;
+}
+#sidebar-toggle:checked ~ .sidebar i.icon{
+   position: relative;
+   top:80px;
+   left: -1rem;
+  cursor: pointer;
+}
+#sidebar-toggle:checked ~ .sidebar i.icon1{
+ left: 2rem;
+ cursor: pointer;
+}
+#sidebar-toggle:checked ~ .main-content{
+  margin-left: 150px;
+  text-align: center;
+}
+#sidebar-toggle:checked ~ .main-content #data-id .db-data table{
+  width: 95%;
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 80px;
+    width: 1300px;
+  }
+
+#sidebar-toggle:checked ~ .sidebar  .traie{
+    margin-top: 50px;
+}
+#sidebar-toggle:checked ~ .sidebar-header{
+   display: flex;
+   justify-content: center;
+}
+#sidebar-toggle:checked ~ .sidebar  img{
+   display: none;
+}
+#sidebar-toggle:checked ~ .sidebar  h5,
+#sidebar-toggle:checked ~ .sidebar  li span:last-child{
+    display: none;
+}
+#sidebar-toggle:checked ~ .sidebar  li{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Les icones*/
+.sidebar a .icon{
+    background-color: var(--color-blue);
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    line-height:  35px;
+    font-size: 18px;
+    padding: 0 8px;
+    border:1px solid #fff;
+    margin-top: 0 1rem;
+}
+.sidebar .traie{
+    margin-left : -0.8rem;
+    height: 2px;
+    width: 18rem;
+    background-color: var(--color-grey-light);
+    opacity: .2;
+}
+.main-content{
+    position: relative;
+    margin-left: 300px;
+    transition: margin-left 500ms;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:260px;
+    z-index: 100;
+    width: calc(100% - 240px);
+    height: 80px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-grey-light);
+    transition: left 500ms;
+}
+header h4{
+ font-size: 30px;
+ color:var(--color-grey-1);
+}
+header .profil{
+    width: 30px;
+    height: 30px;
+    border : 1px solid #000;
+    border-radius: 100%;
+    margin : 4rem 4rem;
+}
+header #input-id{
+    outline : none;
+    border-radius: 25px;
+    height: 30px;
+    border: 0.1px solid #000;
+    padding-left: 4rem;
+}
+header .icon2{
+    position:relative;
+    right: 30px;
+}
+header #admin{
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+header #decon{
+    position: absolute;
+    right: 220px;
+    top: 30px;
+}
+header #admin a{
+    color: var(--color-grey-1);
+}
+header #decon a{
+    color: var(--color-grey-1);
+}
+
+main{
+    position: relative;
+    margin-top: 8rem;
+    padding:1rem;
+    min-height: 90vh;
+    border-radius: 4px 4px 4px 4rem;
+    padding-bottom: 4rem;
+}
+/**/
+main .Iadmin{
+    background: var(--color-grey-bg);
+    margin: 30px 0;
+    height:120px;
+    width:550px;
+    border-radius:50px;
+  }
+main .Iadmin input{
+    outline: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 120px;
+    margin: -10px 20px;
+    border:none;
+
+  }
+  main .Iadmin input::placeholder{
+   text-align: center;
+  }
+  main .Iadmin #btn{
+      background: var(--color-blue);
+      width: 150px;
+      color : #fff;
+      font-size: 14px;
+  }
+  main .Iadmin #btn:hover{
+    background : var(--color-dark);
+    color:#fff;
+    cursor: pointer;
+}
+main .main-dashbrd{
+     display:flex;
+     justify-content: space-around;
+}
+main .main-dashbrd i{
+     display:flex;
+     justify-content: space-around;
+}
+main .main-dashbrd .users-e{
+    border : 1px solid #000;
+    width: 12rem;
+    height: 10rem;
+    line-height: auto;
+    padding: 3rem 1rem;  
+    text-align: center;
+    background: var(--color-dark);
+    color:#fff;
+}
+main .main-dashbrd .users-e i{
+    color : var(--color-blue);
+    font-size: 35px;
+    margin-top: -25px;
+}
+main .main-dashbrd .users-e:hover{
+    cursor:pointer;
+}
+main .main-dashbrd .users-e span{
+    font-weight: bold;  
+    font-size: 35px;
+   
+}
+main .main-dashbrd .users-e h4{
+    font-weight: bold;  
+    font-size: 20px;
+}
+main  thead,tbody,th,tr,td{
+     width: 80px;
+     height: 50px;
+     border: none;
+     text-align: center;
+     background-color: var(--color-grey-bg);
+}
+main #data-id .db-data thead{
+  border-bottom: 0.1px solid var(--color-grey-1);
+}
+main #data-id .db-data table{
+     width: 60rem;
+     height: 50px;
+     border: none;
+     border-collapse: collapse;
+     margin: 0 4rem;
+     margin-top: 4rem;;
+}
+
+#btns{
+    background: var(--color-red);
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+    border:none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1200px){
+    #sidebar-toggle:checked ~ .sidebar{
+        width: 60px;
+    }
+    #sidebar-toggle:checked ~ .sidebar i.icon{
+       position: relative;
+       top:80px;
+       left: -1rem;
+      cursor: pointer;
+    }
+    #sidebar-toggle:checked ~ .sidebar i.icon1{
+     left: 2rem;
+    }
+    #sidebar-toggle:checked ~ .main-content #data-id .db-data table{
+      width: calc(100% -80px);
+    }
+    #sidebar-toggle:checked ~ .main-content header{
+        left: 80px;
+        width: calc(100% -60px);
+      }
+    
+    #sidebar-toggle:checked ~ .sidebar-header{
+       display: block;
+       justify-content: center;
+    }
+    #sidebar-toggle:checked ~ .sidebar  img{
+       display: none;
+    }
+    #sidebar-toggle:checked ~ .sidebar  h5,
+    #sidebar-toggle:checked ~ .sidebar  li span:last-child{
+        display: none;
+    }
+    #sidebar-toggle:checked ~ .sidebar  li{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

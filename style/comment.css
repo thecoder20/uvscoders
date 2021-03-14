@@ -1,0 +1,33 @@
+:root{
+    --main-color:#fff;
+    --color-dark:#1D2231;
+    --color-black:#000;
+    --color-grey-light : #FBFBFB;
+    --color-blue: #0990D0;
+    --color-grey-1:#7A6767;
+    --color-grey-bg:#E9E7E7;
+    --color-green:#6AE95B;
+    --color-red:#FF002B;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+.commentaire{
+ background:  #f7f7f7;
+}
+.commentaire .comment-section{
+    background: #fff;
+    background: #fff;
+}
+.coder{
+    background: var(--color-blue);
+    color:var(--color-grey-light);
+    display: flex;
+    justify-content: space-around;
+}
+.coder .ps{
+    margin-right: 550px;
+    margin-left: 0;
+    background: var(--color-black);
+}
+.coder .dt{
+    background: var(--color-black);
+}
+

@@ -1,0 +1,266 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+                                                    /*HEADER SECTION*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFBFB;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header button
+{
+    display: none;
+    border: none;
+    color: white;
+    background-color: black;
+}
+header button:hover
+{
+    cursor: pointer;
+}
+header button:focus
+{
+    outline: none;
+}
+header ul
+{
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    margin-right: 60px;
+}
+header li
+{
+    float: left;
+    padding-bottom: 10px;
+}
+header a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    margin-right: 16px;
+    border-radius: 40px;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+header a:hover
+{
+    color: white;
+    background-color: black;
+    box-shadow: 0px 2px 4px 0px black;
+}
+header img
+{
+    margin-left: 60px;
+}
+
+                                                    /*SECTION SIDE*/
+.titre
+{
+    color: #707070;
+    background-color: #FBFBFB;
+    margin:0 500px;
+    border-radius: 40px;
+}
+.programmes
+{
+    text-align: center;
+}
+.cours
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 250px;
+    background-color: #F2F2F2;
+}
+.design,.frontEnd,.backEnd,.Tuto,.devMobile,.stageEmploi
+{
+    font-weight: bold;
+    margin: 30px 40px;
+    width: 150px;
+    height: 130px;
+    background-color: #F8F8F8;
+}
+section p
+{
+    padding-bottom: 20px;
+}
+section a
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 40px;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+section a:hover
+{
+    box-shadow: 0px 2px 4px 0px black;
+}
+
+                                                    /*FOOTER SECTION*/
+footer
+{
+    text-align: center;
+    background-color: #E9E9E9;
+}
+                                                    /*MEDIA QUERIES SECTION*/
+@media(max-width:1440px)
+{
+    section img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+    .design,.frontEnd,.backEnd,.Tuto,.devMobile,.stageEmploi
+    {
+        font-weight: bold;
+        margin: 30px 50px;
+        width: 150px;
+        height: 130px;
+        background-color: #F8F8F8;
+    }
+}
+@media(max-width:1350px)
+{
+    .cours
+    {
+        max-width: 100%;
+        margin: 0px 250px;
+    }
+    .titre
+    {
+        margin:0px;
+        border-radius: 40px;
+    }
+    .design,.frontEnd,.backEnd,.Tuto,.devMobile,.stageEmploi
+    {
+        font-weight: bold;
+        margin: 30px 40px;
+        width: 150px;
+        height: 130px;
+        background-color: #F8F8F8;
+    }
+}
+@media(max-width:1192px)
+{
+    .cours
+    {
+        max-width: 100%;
+        margin: 0px 150px;
+    }
+}
+@media(max-width:990px)
+{
+    .cours
+    {
+        max-width: 100%;
+        margin: 0px 50px;
+    }
+}
+@media(max-width:792px)
+{
+    .cours
+    {
+        max-width: 100%;
+        margin: 0px;
+    }
+}
+@media(max-width:685px)
+{
+    .design,.frontEnd,.backEnd,.Tuto,.devMobile,.stageEmploi
+    {
+        font-weight: bold;
+        margin: 30px 25px;
+        width: 150px;
+        height: 130px;
+        background-color: #F8F8F8;
+    }
+}
+@media(max-width:605px)
+{
+    .design,.frontEnd,.backEnd,.Tuto,.devMobile,.stageEmploi
+    {
+        font-weight: bold;
+        margin: 30px 10px;
+        width: 150px;
+        height: 130px;
+        background-color: #F8F8F8;
+    }
+}
+@media(max-width:590px)
+{
+    header
+    {
+        background-color: black;
+    }
+    header img
+    {
+        margin-left: 0;
+    }
+    header button
+    {
+        display: block;
+        margin-right: 20px;
+    }
+    header li
+    {
+        float: none;
+        padding: 10px 0;
+    }
+    header ul
+    {
+        margin-left: 60px;
+    }
+    header a
+    {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 40px;
+        transition: 0.5s ease-in-out;
+        font-weight: bold;
+        text-align: center;
+    }
+    header a:hover
+    {
+        color: black;
+        background-color: white;
+        box-shadow: 0px 2px 4px 0px white;
+    }
+    .dropdown
+    {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: black;
+    }
+}
+@media(max-width:342px)
+{
+    .cours
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
